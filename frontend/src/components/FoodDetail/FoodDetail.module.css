@@ -1,0 +1,186 @@
+/* ═══════════════════════════════════════════════════════════════
+   FOODDETAIL COMPONENT STYLES
+   Large detail card matching Frame 8 of the mockup
+   ═══════════════════════════════════════════════════════════════ */
+
+.wrapper {
+  /* Detail page background — change --color-detail-bg in globals.css */
+  background: var(--color-detail-bg);
+  min-height: calc(100vh - 100px);
+  padding: var(--space-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: var(--color-surface);
+  /* Detail card border — change --color-detail-border in globals.css */
+  border: 3px solid var(--color-detail-border);
+  border-radius: var(--radius-lg);
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  /* Subtle gradient at top of card */
+  background: linear-gradient(
+    to bottom,
+    rgba(212, 165, 116, 0.1),
+    transparent
+  );
+}
+
+.imageContainer {
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--color-detail-border);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  background: var(--color-card-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.title {
+  /* Detail title font — change --font-display in globals.css */
+  font-family: var(--font-display);
+  /* Detail title color — change --color-primary in globals.css */
+  color: var(--color-primary);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+}
+
+.cardBody {
+  padding: 0 var(--space-lg) var(--space-lg);
+}
+
+.description {
+  color: var(--color-text-dark);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.infoItem {
+  padding: var(--space-sm);
+  background: rgba(212, 165, 116, 0.1);
+  border-radius: var(--radius-sm);
+}
+
+.infoLabel {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.infoValue {
+  font-size: var(--text-sm);
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+.section {
+  margin-bottom: var(--space-md);
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  color: var(--color-primary);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.ingredientList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.ingredient {
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  font-size: var(--text-sm);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.relatedList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.relatedLink {
+  color: var(--color-primary-light);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  padding: var(--space-xs) 0;
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.relatedLink:hover {
+  color: var(--color-primary);
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-text-dark);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: var(--space-sm) 0;
+  margin-bottom: var(--space-md);
+  transition: opacity var(--transition-fast);
+}
+
+.backButton:hover {
+  opacity: 0.7;
+}
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

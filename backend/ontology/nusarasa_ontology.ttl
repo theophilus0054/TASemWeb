@@ -169,7 +169,7 @@ nusa:Rendang
     nusa:berasal_dari   nusa:SumateraBarat ;
     nusa:mengandung     nusa:DagingSapi, nusa:Santan, nusa:CabaiMerah, nusa:LemangBumbu ;
     nusa:terkait_budaya nusa:BudayaMinangkabau ;
-    nusa:disajikan_pada nusa:AcaraPernikahan, nusa:LebaranIdul Fitri ;
+    nusa:disajikan_pada nusa:AcaraPernikahan, nusa:LebaranIdulFitri ;
     nusa:memiliki_varian nusa:RendangAyam .
 
 # --- Gado-Gado ---

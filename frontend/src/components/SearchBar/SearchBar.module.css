@@ -1,0 +1,62 @@
+/* ═══════════════════════════════════════════════════════════════
+   SEARCHBAR COMPONENT STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+.searchContainer {
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  /* Search area background — same as header */
+  background: var(--color-header-bg);
+  padding-top: 0;
+}
+
+.input {
+  flex: 1;
+  padding: var(--space-sm) var(--space-md);
+  /* Search input background — change --color-search-bg in globals.css */
+  background: var(--color-search-bg);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-base);
+  color: var(--color-text-dark);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input:focus {
+  border-color: var(--color-primary-light);
+}
+
+.button {
+  /* Search button color — change --color-search-btn in globals.css */
+  background: var(--color-search-btn);
+  color: var(--color-search-btn-text);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-base);
+  font-weight: 600;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--transition-fast);
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+/* Search icon */
+.searchIcon {
+  width: 20px;
+  height: 20px;
+}

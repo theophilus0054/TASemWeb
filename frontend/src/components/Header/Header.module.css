@@ -1,0 +1,30 @@
+/* ═══════════════════════════════════════════════════════════════
+   HEADER COMPONENT STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+.header {
+  /* Header background — change --color-header-bg in globals.css */
+  background: linear-gradient(
+    135deg,
+    var(--color-header-bg),
+    var(--color-header-bg-end)
+  );
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+}
+
+.logo {
+  /* Branding font — change --font-display in globals.css */
+  font-family: var(--font-display);
+  /* Brand text color — change --color-primary in globals.css */
+  color: var(--color-primary);
+  font-size: var(--text-3xl);
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+}
+
+.logo:hover {
+  opacity: 0.85;
+}

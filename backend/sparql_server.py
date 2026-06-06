@@ -19,7 +19,6 @@ from flask import Flask, request, jsonify, render_template_string
 from flask_cors import CORS
 from rdflib import Graph, Namespace
 from rdflib.plugins.sparql import prepareQuery
-from rdflib.plugins.sparql.results.jsonresults import JSONResultFormatter
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
