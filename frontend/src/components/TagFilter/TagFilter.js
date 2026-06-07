@@ -1,19 +1,24 @@
 'use client';
 
-import styles from './TagFilter.module.css';
-
+/**
+ * TagFilter — horizontal scrollable pill filters.
+ * Uses vanilla CSS classes defined in globals.css.
+ */
 export default function TagFilter({ tags = [], activeTags = [], onToggle }) {
   return (
-    <div className={styles.container}>
-      {tags.map((tag) => (
-        <button
-          key={tag}
-          className={`${styles.tag} ${activeTags.includes(tag) ? styles.tagActive : ''}`}
-          onClick={() => onToggle && onToggle(tag)}
-        >
-          {tag}
-        </button>
-      ))}
+    <div className="tag-filters">
+      {tags.map((tag) => {
+        const active = activeTags.includes(tag);
+        return (
+          <button
+            key={tag}
+            onClick={() => onToggle && onToggle(tag)}
+            className={`tag-btn ${active ? 'tag-btn--active' : ''}`}
+          >
+            {tag}
+          </button>
+        );
+      })}
     </div>
   );
 }

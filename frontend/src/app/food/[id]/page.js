@@ -6,7 +6,7 @@ import FoodDetail from '@/components/FoodDetail/FoodDetail';
 
 /**
  * Food Detail Page — /food/[id]
- * Fetches full dish details from the API and displays them.
+ * Uses vanilla CSS classes defined in globals.css.
  */
 export default function FoodPage({ params }) {
   const { id } = use(params);
@@ -20,39 +20,27 @@ export default function FoodPage({ params }) {
       try {
         const res = await fetch(`/api/data/${id}`);
         if (!res.ok) throw new Error('Hidangan tidak ditemukan');
-        const data = await res.json();
-        setFood(data);
+        setFood(await res.json());
       } catch (err) {
         setError(err.message);
       } finally {
         setLoading(false);
       }
     };
-
     if (id) fetchFood();
   }, [id]);
 
   return (
-    <div>
+    <div className="detail-page">
       <Header />
-
       {loading ? (
-        <div style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '50vh',
-          color: 'var(--color-text-muted)'
-        }}>
+        <div className="state-center">
+          <div className="spinner" />
           <p>Memuat detail hidangan...</p>
         </div>
       ) : error ? (
-        <div style={{
-          textAlign: 'center',
-          padding: '3rem',
-          color: '#e57373'
-        }}>
-          <p>❌ {error}</p>
+        <div className="state-center">
+          <p className="error-text">❌ {error}</p>
         </div>
       ) : food ? (
         <FoodDetail food={food} />

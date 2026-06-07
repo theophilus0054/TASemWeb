@@ -1,86 +1,82 @@
 import Link from 'next/link';
-import styles from './FoodDetail.module.css';
 
 /**
  * FoodDetail — Full detail view of a dish.
- * Shows image, title, description, info grid, ingredients, and related dishes.
+ * Uses vanilla CSS classes defined in globals.css.
  */
 export default function FoodDetail({ food }) {
   const emoji = food.tipe === 'Beverage' ? '🍹'
     : food.tipe === 'Snack' ? '🍪'
     : '🍛';
 
+  const infoItems = [
+    { label: 'Daerah',         value: food.daerah },
+    { label: 'Budaya',         value: food.budaya },
+    { label: 'Metode Memasak', value: food.metode_memasak },
+    { label: 'Kepedasan',      value: food.tingkat_kepedasan },
+    { label: 'Diet',           value: food.kategori_diet },
+    { label: 'Tipe',           value: food.tipe },
+  ].filter(({ value }) => value);
+
   return (
-    <div className={styles.wrapper}>
-      <div style={{ maxWidth: 600, width: '100%' }}>
-        <Link href="/" className={styles.backButton}>
-          ← Kembali ke pencarian
+    <div className="detail-wrapper">
+      <div className="detail-inner">
+
+        {/* Back button */}
+        <Link href="/food" className="detail-back">
+          ← Kembali ke jelajahi
         </Link>
 
-        <div className={styles.card}>
-          {/* Card header: image + title */}
-          <div className={styles.cardHeader}>
-            <div className={styles.imageContainer}>
-              <div className={styles.placeholderImage} aria-hidden="true">
-                {emoji}
-              </div>
+        {/* Card */}
+        <div className="detail-card">
+
+          {/* Card header — gradient strip */}
+          <div className="detail-card__header">
+            <div className="detail-card__emoji">
+              {emoji}
             </div>
-            <h2 className={styles.title}>{food.nama}</h2>
+            <h2 className="detail-card__title">
+              {food.nama}
+            </h2>
           </div>
 
-          {/* Card body: details */}
-          <div className={styles.cardBody}>
+          {/* Card body */}
+          <div className="detail-card__body">
+
+            {/* Description */}
             {food.deskripsi && (
-              <p className={styles.description}>{food.deskripsi}</p>
+              <p className="detail-card__desc">
+                {food.deskripsi}
+              </p>
             )}
 
             {/* Info grid */}
-            <div className={styles.infoGrid}>
-              {food.daerah && (
-                <div className={styles.infoItem}>
-                  <div className={styles.infoLabel}>Daerah</div>
-                  <div className={styles.infoValue}>{food.daerah}</div>
-                </div>
-              )}
-              {food.budaya && (
-                <div className={styles.infoItem}>
-                  <div className={styles.infoLabel}>Budaya</div>
-                  <div className={styles.infoValue}>{food.budaya}</div>
-                </div>
-              )}
-              {food.metode_memasak && (
-                <div className={styles.infoItem}>
-                  <div className={styles.infoLabel}>Metode Memasak</div>
-                  <div className={styles.infoValue}>{food.metode_memasak}</div>
-                </div>
-              )}
-              {food.tingkat_kepedasan && (
-                <div className={styles.infoItem}>
-                  <div className={styles.infoLabel}>Kepedasan</div>
-                  <div className={styles.infoValue}>{food.tingkat_kepedasan}</div>
-                </div>
-              )}
-              {food.kategori_diet && (
-                <div className={styles.infoItem}>
-                  <div className={styles.infoLabel}>Diet</div>
-                  <div className={styles.infoValue}>{food.kategori_diet}</div>
-                </div>
-              )}
-              {food.tipe && (
-                <div className={styles.infoItem}>
-                  <div className={styles.infoLabel}>Tipe</div>
-                  <div className={styles.infoValue}>{food.tipe}</div>
-                </div>
-              )}
-            </div>
+            {infoItems.length > 0 && (
+              <div className="detail-info-grid">
+                {infoItems.map(({ label, value }) => (
+                  <div key={label} className="detail-info-item">
+                    <p className="detail-info-label">
+                      {label}
+                    </p>
+                    <p className="detail-info-value">
+                      {value}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
 
             {/* Ingredients */}
             {food.bahan_utama && food.bahan_utama.length > 0 && (
-              <div className={styles.section}>
-                <h3 className={styles.sectionTitle}>Bahan Utama</h3>
-                <div className={styles.ingredientList}>
+              <div>
+                <h3 className="detail-section-title">
+                  Bahan Utama
+                </h3>
+                <div className="detail-ingredients">
                   {food.bahan_utama.map((bahan, i) => (
-                    <span key={i} className={styles.ingredient}>{bahan}</span>
+                    <span key={i} className="detail-ingredient">
+                      {bahan}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -88,14 +84,16 @@ export default function FoodDetail({ food }) {
 
             {/* Related dishes */}
             {food.related && food.related.length > 0 && (
-              <div className={styles.section}>
-                <h3 className={styles.sectionTitle}>Hidangan Terkait</h3>
-                <div className={styles.relatedList}>
+              <div>
+                <h3 className="detail-section-title">
+                  Hidangan Terkait
+                </h3>
+                <div className="detail-related-list">
                   {food.related.map((rel) => (
                     <Link
                       key={rel.id}
                       href={`/food/${rel.id}`}
-                      className={styles.relatedLink}
+                      className="detail-related-link"
                     >
                       → {rel.nama}
                     </Link>
@@ -103,6 +101,7 @@ export default function FoodDetail({ food }) {
                 </div>
               </div>
             )}
+
           </div>
         </div>
       </div>

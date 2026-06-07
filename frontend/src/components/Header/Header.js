@@ -1,12 +1,25 @@
 import Link from 'next/link';
-import styles from './Header.module.css';
 
+/**
+ * Header — compact top navigation bar.
+ * Uses vanilla CSS classes defined in globals.css.
+ */
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <header className="site-header">
       <Link href="/">
-        <h1 className={styles.logo}>NusaRasa</h1>
+        <span className="text-gradient site-header__logo">
+          NusaRasa
+        </span>
       </Link>
+      <nav className="site-header__nav">
+        <Link href="/" className="site-header__link">
+          Beranda
+        </Link>
+        <Link href="/food" className="site-header__link">
+          Jelajahi
+        </Link>
+      </nav>
     </header>
   );
 }
