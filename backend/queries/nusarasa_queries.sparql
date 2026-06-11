@@ -1,0 +1,322 @@
+PREFIX nusa: <http://nusarasa.id/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# ============================================================================
+# SPARQL QUERIES - NusaRasa Semantic Web
+# ============================================================================
+# Koleksi 15 SPARQL query untuk berbagai skenario pencarian
+# Dibuat untuk: Fusion, multi-criteria search, inferencing
+# ============================================================================
+
+
+# ============================================================================
+# 1. BASIC QUERIES - Dasar
+# ============================================================================
+
+# Q1: List semua hidangan dengan deskripsi
+# Skenario: Browse semua makanan
+# Kategori: Basic SELECT
+SELECT ?dish ?name ?description
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:deskripsi ?description .
+}
+ORDER BY ?name
+
+
+# Q2: Count total hidangan, region, dan bahan
+# Skenario: Dashboard statistics
+# Kategori: Aggregation
+SELECT 
+  (COUNT(DISTINCT ?dish) as ?jumlah_hidangan)
+  (COUNT(DISTINCT ?region) as ?jumlah_region)
+  (COUNT(DISTINCT ?ingredient) as ?jumlah_bahan)
+WHERE {
+  OPTIONAL { ?dish a nusa:Dish . }
+  OPTIONAL { ?region a nusa:Region . }
+  OPTIONAL { ?ingredient a nusa:Ingredient . }
+}
+
+
+# ============================================================================
+# 2. FILTERING QUERIES - Filter sederhana
+# ============================================================================
+
+# Q3: Cari makanan dari region tertentu (Sumatera Barat)
+# Skenario: "Makanan apa dari Sumatera Barat?"
+# Kategori: Region-based filtering
+SELECT ?dish ?name ?cooking_method
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:metode_memasak ?cooking_method ;
+        nusa:berasal_dari ?region .
+  ?region nusa:nama "Sumatera Barat" .
+}
+ORDER BY ?name
+
+
+# Q4: Cari makanan yang tidak pedas
+# Skenario: "Saya tidak suka pedas, rekomendasi apa?"
+# Kategori: Spice level filtering
+SELECT ?dish ?name ?description
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:deskripsi ?description ;
+        nusa:tingkat_kepedasan ?spice_level .
+  FILTER (?spice_level = "Tidak Pedas")
+}
+
+
+# Q5: Cari hidangan vegetarian
+# Skenario: "Saya vegetarian, apa makanan yang cocok?"
+# Kategori: Diet category filtering
+SELECT ?dish ?name ?region_name
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:kategori_diet ?diet ;
+        nusa:berasal_dari ?region .
+  ?region nusa:nama ?region_name .
+  FILTER (CONTAINS(?diet, "Vegetarian"))
+}
+
+
+# ============================================================================
+# 3. MULTI-CRITERIA QUERIES - Multiple filters
+# ============================================================================
+
+# Q6: Makanan dari Jawa Tengah yang tidak pedas
+# Skenario: "Makanan dari Jawa Tengah, yang tidak pedas"
+# Kategori: Multi-filter (region + spice)
+SELECT ?dish ?name ?cooking ?description
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:metode_memasak ?cooking ;
+        nusa:deskripsi ?description ;
+        nusa:tingkat_kepedasan ?spice ;
+        nusa:berasal_dari ?region .
+  ?region nusa:nama "Jawa Tengah" .
+  FILTER (?spice = "Tidak Pedas" || ?spice = "Sedang")
+}
+
+
+# Q7: Makanan dengan bahan tertentu (mengandung Santan)
+# Skenario: "Makanan apa yang mengandung santan?"
+# Kategori: Ingredient-based search
+SELECT ?dish ?name ?description
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:deskripsi ?description ;
+        nusa:mengandung ?ingredient .
+  ?ingredient nusa:nama ?ing_name .
+  FILTER (CONTAINS(?ing_name, "Santan"))
+}
+
+
+# Q8: Makanan dengan kombinasi bahan (Daging + Rempah)
+# Skenario: "Makanan dari daging dengan rempah khas Indonesia"
+# Kategori: Multiple ingredient filtering
+SELECT ?dish ?name (COUNT(?ingredient) as ?num_ingredients)
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:mengandung ?ingredient .
+  ?ingredient nusa:nama ?ing_name .
+  FILTER (CONTAINS(?ing_name, "Daging") || CONTAINS(?ing_name, "Cabai") || CONTAINS(?ing_name, "Santan"))
+}
+GROUP BY ?dish ?name
+HAVING (COUNT(?ingredient) >= 2)
+
+
+# ============================================================================
+# 4. OPTIONAL QUERIES - With optional properties
+# ============================================================================
+
+# Q9: Hidangan dengan kategori diet yang jelas (dan events jika ada)
+# Skenario: "Hidangan apa untuk acara khusus?"
+# Kategori: OPTIONAL properties
+SELECT ?dish ?name ?diet ?event_name
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:kategori_diet ?diet .
+  OPTIONAL {
+    ?dish nusa:disajikan_pada ?event .
+    ?event nusa:nama ?event_name .
+  }
+  FILTER (?diet != "")
+}
+ORDER BY ?event_name ?name
+
+
+# Q10: Hidangan dengan varian/alternatif
+# Skenario: "Hidangan apa yang punya varian?"
+# Kategori: OPTIONAL relationships
+SELECT ?dish ?name ?varian_name
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name .
+  OPTIONAL {
+    ?dish nusa:memiliki_varian ?varian .
+    ?varian nusa:nama ?varian_name .
+  }
+}
+
+
+# ============================================================================
+# 5. COMPLEX QUERIES - Advanced patterns
+# ============================================================================
+
+# Q11: Hidangan Jawa dengan preferensi (pedas/tidak pedas/diet vegetarian)
+# Skenario: Advanced filter dengan multiple preferences
+# Kategori: Complex filtering + BIND
+SELECT ?dish ?name ?spice ?diet ?region_name
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:tingkat_kepedasan ?spice ;
+        nusa:kategori_diet ?diet ;
+        nusa:berasal_dari ?region .
+  ?region nusa:nama ?region_name .
+  
+  FILTER (
+    CONTAINS(?region_name, "Jawa") &&
+    (?spice = "Tidak Pedas" || ?spice = "Sedang") &&
+    (CONTAINS(?diet, "Vegetarian") || CONTAINS(?diet, "Vegan"))
+  )
+}
+
+
+# Q12: Perbandingan metode memasak per region
+# Skenario: "Metode memasak apa yang paling umum di setiap region?"
+# Kategori: Aggregation + GROUP BY
+SELECT ?region_name ?cooking_method (COUNT(?dish) as ?count)
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:metode_memasak ?cooking_method ;
+        nusa:berasal_dari ?region .
+  ?region nusa:nama ?region_name .
+}
+GROUP BY ?region_name ?cooking_method
+ORDER BY ?region_name DESC(?count)
+
+
+# Q13: Cari hidangan berdasarkan bahan AND kultur
+# Skenario: "Makanan pedas dari budaya Minang dengan rempah"
+# Kategori: Multi-property + Multiple filters
+SELECT ?dish ?name ?culture_name ?region_name
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:tingkat_kepedasan "Tinggi" ;
+        nusa:terkait_budaya ?culture ;
+        nusa:berasal_dari ?region ;
+        nusa:mengandung ?ingredient .
+  
+  ?culture nusa:nama ?culture_name .
+  ?region nusa:nama ?region_name .
+  ?ingredient nusa:nama ?ing_name .
+  
+  FILTER (CONTAINS(?culture_name, "Minang"))
+}
+
+
+# ============================================================================
+# 6. INFERENCING & RELATIONSHIPS
+# ============================================================================
+
+# Q14: Hidangan yang berkaitan dengan hidangan lain
+# Skenario: "Hidangan apa yang mirip dengan Rendang?"
+# Kategori: Property traversal
+SELECT ?dish ?name ?related_dish ?related_name
+WHERE {
+  ?dish nusa:nama "Rendang" ;
+        nusa:berkaitan_dengan ?related_dish .
+  ?related_dish nusa:nama ?related_name .
+}
+OPTIONAL {
+  ?related_dish nusa:deskripsi ?deskripsi .
+}
+
+
+# Q15: Rekomendasi hidangan berdasarkan region + preferensi
+# Skenario: "Rekomendasikan 5 hidangan dari region ini, dengan kriteria tertentu"
+# Kategori: Complex recommendation query
+SELECT ?dish ?name ?region_name ?spice ?diet ?description
+WHERE {
+  ?dish a nusa:Dish ;
+        nusa:nama ?name ;
+        nusa:tingkat_kepedasan ?spice ;
+        nusa:kategori_diet ?diet ;
+        nusa:deskripsi ?description ;
+        nusa:berasal_dari ?region .
+  ?region nusa:nama ?region_name .
+  
+  # Filter criteria
+  FILTER (
+    CONTAINS(?region_name, "Jawa") ||
+    CONTAINS(?region_name, "Sumatera")
+  )
+  FILTER (
+    ?spice = "Tidak Pedas" || ?spice = "Sedang"
+  )
+}
+ORDER BY ?region_name ?name
+LIMIT 5
+
+
+# ============================================================================
+# QUERY EXECUTION NOTES
+# ============================================================================
+# 
+# Untuk menjalankan queries ini:
+# 
+# 1. Copy-paste query ke Fuseki Query Console:
+#    http://localhost:3030/dataset.html?tab=query&ds=/nusarasa
+#
+# 2. Atau via cURL:
+#    curl -X POST http://localhost:3030/nusarasa/sparql \
+#      -d "query=$(cat query.sparql)" \
+#      -H "Accept: application/sparql-results+json"
+#
+# 3. Atau via Python (requests library):
+#    import requests
+#    response = requests.post(
+#      'http://localhost:3030/nusarasa/sparql',
+#      data={'query': open('query.sparql').read()},
+#      headers={'Accept': 'application/sparql-results+json'}
+#    )
+#    print(response.json())
+#
+# ============================================================================
+# CATEGORIES BREAKDOWN
+# ============================================================================
+#
+# Basic SELECT:         Q1
+# Aggregation:          Q2
+# Single Filter:        Q3, Q4, Q5
+# Multi-Filter:         Q6, Q7
+# Multiple Ingredients: Q8
+# OPTIONAL:             Q9, Q10
+# Complex Filtering:    Q11, Q12, Q13
+# Relationships:        Q14
+# Recommendations:      Q15
+#
+# FEATURES USED:
+# - FILTER with comparison operators
+# - CONTAINS for string matching
+# - OPTIONAL for optional properties
+# - COUNT, GROUP BY for aggregations
+# - ORDER BY for sorting
+# - LIMIT for pagination
+# - Multiple property paths
+# - Complex boolean expressions
+#
+# ============================================================================

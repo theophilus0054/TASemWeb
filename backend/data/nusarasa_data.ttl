@@ -1,0 +1,1745 @@
+@prefix nusa: <http://nusarasa.id/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+nusa:Dish_Acang a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Ambon ;
+    nusa:deskripsi "Olahan sagu dan kelapa yang dimasak menjadi dodol padat berwarna coklat. Kue tradisional Maluku untuk upacara adat."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Kelapa,
+        nusa:Ingredient_Sagu ;
+    nusa:metode_memasak "Dimasak"@id ;
+    nusa:nama "Acang"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Arsik a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Tapanuli ;
+    nusa:deskripsi "Ikan mas dimasak dengan andaliman (merica Batak), asam cikala, dan rempah khas Batak. Kuah berwarna kuning pekat."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Mas ;
+    nusa:metode_memasak "Dimasak dengan bumbu"@id ;
+    nusa:nama "Arsik"@id ;
+    nusa:terkait_budaya nusa:Culture_Batak ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Asinan_Betawi a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jakarta ;
+    nusa:deskripsi "Sayuran atau buah dalam kuah cuka asam pedas manis. Tersedia versi sayur dan buah, populer sebagai jajanan segar Jakarta."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Buah,
+        nusa:Ingredient_Sayuran ;
+    nusa:metode_memasak "Diasinkan / Difermentasi"@id ;
+    nusa:nama "Asinan Betawi"@id ;
+    nusa:terkait_budaya nusa:Culture_Betawi ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Aunu_Senebre a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jayapura ;
+    nusa:deskripsi "Daun talas muda dicampur ikan teri dan parutan kelapa lalu dikukus. Masakan tradisional Papua yang sederhana dan bergizi."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Teri,
+        nusa:Ingredient_Talas ;
+    nusa:metode_memasak "Ditumis / Dikukus"@id ;
+    nusa:nama "Aunu Senebre"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Ayam_Taliwang a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Lombok ;
+    nusa:deskripsi "Ayam kampung muda dibakar atau digoreng dengan bumbu cabai merah, terasi, dan rempah Lombok. Pedas membakar khas NTB."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ayam ;
+    nusa:metode_memasak "Dibakar / Digoreng"@id ;
+    nusa:nama "Ayam Taliwang"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sangat Pedas"@id .
+
+nusa:Dish_Babi_Guling a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bali ;
+    nusa:deskripsi "Babi utuh yang isi perutnya diisi rempah lalu dipanggang sambil diputar di atas bara api. Hidangan upacara adat Bali."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Babi ;
+    nusa:metode_memasak "Dipanggang / Diputar"@id ;
+    nusa:nama "Babi Guling"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Bakpia a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Yogyakarta ;
+    nusa:deskripsi "Kue bulat pipih berisi pasta kacang hijau yang dipanggang hingga kecoklatan. Oleh-oleh wajib dari Yogyakarta."@id ;
+    nusa:kategori_diet "Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Kacang_Hijau,
+        nusa:Ingredient_Keju ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Bakpia"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Bakso a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Nationwide_asal_Solo ;
+    nusa:deskripsi "Bola daging sapi kenyal dalam kuah kaldu bening. Disajikan dengan mie, bihun, tahu, dan pelengkap lainnya. Makanan rakyat nasional."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Bakso"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Bebek_Sinjai a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Madura ;
+    nusa:deskripsi "Bebek digoreng hingga sangat renyah dengan bumbu rempah khas Madura. Disajikan dengan sambal petis yang kuat dan nasi."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Bebek ;
+    nusa:metode_memasak "Digoreng"@id ;
+    nusa:nama "Bebek Sinjai"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Beberuk_Terong a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Lombok ;
+    nusa:deskripsi "Terong dan kacang panjang yang dibakar lalu disiram sambal mentah segar. Cocok sebagai pelengkap ayam taliwang."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Terong ;
+    nusa:metode_memasak "Dibakar"@id ;
+    nusa:nama "Beberuk Terong"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Betutu a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Gianyar ;
+    nusa:deskripsi "Ayam atau bebek diisi bumbu base genep lalu dibungkus dan dipanggang perlahan dalam sekam padi berjam-jam."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ayam,
+        nusa:Ingredient_Bebek ;
+    nusa:metode_memasak "Dipanggang perlahan"@id ;
+    nusa:nama "Betutu"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Bika_Ambon a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Medan ;
+    nusa:deskripsi "Kue berpori kuning dari tepung sagu, telur, dan santan. Meski bernama Ambon, kue ini justru terkenal dari Medan."@id ;
+    nusa:kategori_diet "Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Tepung_Sagu ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Bika Ambon"@id ;
+    nusa:terkait_budaya nusa:Culture_Batak ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Bubur_Pedas a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Sambas ;
+    nusa:deskripsi "Bubur beras dengan beragam sayuran dan rempah-rempah. Hidangan tradisional Melayu Sambas yang biasa disajikan saat acara adat."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Beras,
+        nusa:Ingredient_Sayuran ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Bubur Pedas"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Cakalang_Fufu a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Manado ;
+    nusa:deskripsi "Ikan cakalang yang diasap hingga kering dan berwarna kecoklatan. Bisa dimakan langsung atau diolah menjadi masakan lain."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Cakalang ;
+    nusa:metode_memasak "Diasap"@id ;
+    nusa:nama "Cakalang Fufu"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Catemak_Jagung a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Kupang ;
+    nusa:deskripsi "Bubur jagung dengan kacang-kacangan dan sayuran. Makanan pokok masyarakat NTT yang sederhana dan bergizi tinggi."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Jagung ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Catemak Jagung"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Chai_Kwe a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Pontianak ;
+    nusa:deskripsi "Dimsum khas Tionghoa-Pontianak berisi bengkuang, kucai, atau keladi yang dibungkus kulit tepung tipis."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sayuran,
+        nusa:Ingredient_Tepung_Beras ;
+    nusa:metode_memasak "Dikukus / Digoreng"@id ;
+    nusa:nama "Chai Kwe"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Coto_Makassar a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Makassar ;
+    nusa:deskripsi "Sup jeroan sapi dalam kuah kacang yang kental dan gelap. Disajikan dengan burasa (lontong khas Makassar) dan sambal tauco."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Jeroan_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Coto Makassar"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Gado_Gado a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jakarta ;
+    nusa:deskripsi "Sayuran rebus dengan saus kacang yang kental dan gurih. Dilengkapi lontong, telur, dan kerupuk. Salah satu ikon kuliner Indonesia."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sayuran ;
+    nusa:metode_memasak "Direbus / Dikukus"@id ;
+    nusa:nama "Gado-Gado"@id ;
+    nusa:terkait_budaya nusa:Culture_Betawi ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Gangan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bangka ;
+    nusa:deskripsi "Sup asam pedas khas Bangka dengan ikan dan nanas. Kuah bening segar dengan rasa asam dari nanas dan pedas dari cabai."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan,
+        nusa:Ingredient_Nanas ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Gangan"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Geguduh a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Lampung ;
+    nusa:deskripsi "Pisang yang dihaluskan dicampur tepung lalu digoreng. Camilan tradisional Lampung yang manis dan renyah."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Pisang,
+        nusa:Ingredient_Tepung ;
+    nusa:metode_memasak "Digoreng"@id ;
+    nusa:nama "Geguduh"@id ;
+    nusa:terkait_budaya nusa:Culture_Lampung ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Gohu_Ikan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Ternate ;
+    nusa:deskripsi "Ikan tuna segar dipotong dadu dan dicampur bumbu pedas tanpa dimasak. Sashimi ala Maluku Utara yang segar dan berani."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Tuna ;
+    nusa:metode_memasak "Tidak Dimasak (sashimi)"@id ;
+    nusa:nama "Gohu Ikan"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Gudeg a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Yogyakarta ;
+    nusa:deskripsi "Nangka muda dimasak perlahan dengan santan dan gula aren hingga berwarna coklat kehitaman. Rasa manis gurih khas Yogyakarta."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Nangka_Muda ;
+    nusa:metode_memasak "Dimasak lambat (slow-cook)"@id ;
+    nusa:nama "Gudeg"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Gulai_Belacan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Riau ;
+    nusa:deskripsi "Udang dimasak dalam kuah santan kental dengan belacan (terasi) Melayu. Aroma tajam dan rasa gurih yang kuat."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Udang ;
+    nusa:metode_memasak "Dimasak dengan santan"@id ;
+    nusa:nama "Gulai Belacan"@id ;
+    nusa:terkait_budaya nusa:Culture_Melayu ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Gulai_Ikan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Padang ;
+    nusa:deskripsi "Ikan dimasak dalam kuah santan kuning kaya rempah seperti kunyit, serai, dan daun jeruk. Hidangan khas Minangkabau."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Dimasak dengan santan"@id ;
+    nusa:nama "Gulai Ikan"@id ;
+    nusa:terkait_budaya nusa:Culture_Minang ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Gulai_Tepek_Ikan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jambi ;
+    nusa:deskripsi "Olahan ikan gabus yang dihaluskan lalu dibentuk menjadi lempengan dan dimasak dalam kuah gulai santan khas Jambi."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Gabus ;
+    nusa:metode_memasak "Dimasak dengan santan"@id ;
+    nusa:nama "Gulai Tepek Ikan"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Halua_Kenari a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Maluku_Utara ;
+    nusa:deskripsi "Kacang kenari yang dicampur gula dan dimasak hingga mengkristal. Camilan manis khas Maluku Utara dari pohon kenari endemik."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Kenari_Canarium ;
+    nusa:metode_memasak "Dipanggang / Dimasak"@id ;
+    nusa:nama "Halua Kenari"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Ikan_Bakar_Manokwari a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Manokwari ;
+    nusa:deskripsi "Ikan dibakar dengan bumbu rica khas Papua Barat. Disajikan dengan sambal cabai hijau segar dan nasi atau papeda."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Dibakar"@id ;
+    nusa:nama "Ikan Bakar Manokwari"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Ikan_Kuah_Kuning a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Ambon ;
+    nusa:deskripsi "Ikan dalam kuah santan kuning dengan kunyit, serai, dan kemangi. Masakan sehari-hari yang ringan dan menyegarkan dari Maluku."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Ikan Kuah Kuning"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Ikan_Woku_Belanga a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Manado ;
+    nusa:deskripsi "Ikan kakap dimasak dalam belanga tanah liat dengan bumbu woku lengkap: serai, kemangi, kunyit, dan banyak cabai."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Kakap ;
+    nusa:metode_memasak "Dimasak dalam belanga"@id ;
+    nusa:nama "Ikan Woku Belanga"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Jagung_Bose a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Kupang ;
+    nusa:deskripsi "Jagung pipil yang dimasak bersama kacang merah dan kacang hijau hingga lembek seperti bubur. Makanan tradisional Timor."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Jagung ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Jagung Bose"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Juhu_Singkah a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palangkaraya ;
+    nusa:deskripsi "Rebung bambu muda dimasak dalam kuah santan dengan bumbu rempah. Hidangan tradisional Dayak yang lembut dan gurih."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Rebung ;
+    nusa:metode_memasak "Dimasak dengan santan"@id ;
+    nusa:nama "Juhu Singkah"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Jukut_Urab a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bali ;
+    nusa:deskripsi "Sayuran rebus yang dicampur dengan parutan kelapa berbumbu. Salad tradisional Bali yang segar dan bergizi."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sayuran ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Jukut Urab"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Kaledo a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palu ;
+    nusa:deskripsi "Sup kaki sapi dalam kuah asam dari asam jawa. Kolagen tinggi dengan rasa asam segar khas kuliner Palu, Sulawesi Tengah."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Kaki_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Kaledo"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Kalumpe a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palangkaraya ;
+    nusa:deskripsi "Daun singkong ditumbuk kasar lalu dimasak dengan santan dan rempah. Lauk sayur khas Dayak Kalimantan Tengah."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Daun_Singkong ;
+    nusa:metode_memasak "Ditumbuk / Dimasak"@id ;
+    nusa:nama "Kalumpe"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Kapurung a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palopo ;
+    nusa:deskripsi "Bola-bola sagu dalam kuah asam ikan dengan sayuran. Makanan pokok masyarakat Luwu, Sulawesi Selatan yang mengenyangkan."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Sagu ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Kapurung"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Karedok a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bandung ;
+    nusa:deskripsi "Sayuran mentah segar dengan saus kacang berbumbu kencur. Mirip gado-gado tapi semua bahan mentah, khas Sunda."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sayuran_Mentah ;
+    nusa:metode_memasak "Tidak Dimasak"@id ;
+    nusa:nama "Karedok"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Kerak_Telor a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jakarta ;
+    nusa:deskripsi "Omelette tradisional Betawi dari beras ketan, telur, dan ebi yang dipanggang di atas arang. Ditaburi serundeng dan bawang goreng."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Beras_Ketan,
+        nusa:Ingredient_Telur ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Kerak Telor"@id ;
+    nusa:terkait_budaya nusa:Culture_Betawi ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Kerupuk_Udang a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Sidoarjo ;
+    nusa:deskripsi "Kerupuk dari adonan udang dan tepung yang digoreng hingga mengembang renyah. Sidoarjo adalah produsen kerupuk udang terbesar."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Udang ;
+    nusa:metode_memasak "Digoreng"@id ;
+    nusa:nama "Kerupuk Udang"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Ketoprak a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jakarta ;
+    nusa:deskripsi "Tahu, bihun, dan sayuran dengan bumbu kacang, kecap, dan bawang goreng. Makanan jalanan khas Jakarta yang menyegarkan."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Bihun,
+        nusa:Ingredient_Tahu ;
+    nusa:metode_memasak "Tidak Dimasak (mentah)"@id ;
+    nusa:nama "Ketoprak"@id ;
+    nusa:terkait_budaya nusa:Culture_Betawi ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Ketupat_Kandangan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Kandangan ;
+    nusa:deskripsi "Ketupat nasi dengan kuah santan dan ikan gabus goreng. Berbeda dengan soto Banjar karena menggunakan ikan, bukan ayam."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Beras,
+        nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Ketupat Kandangan"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Klepon a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Nationwide_asal_Jawa ;
+    nusa:deskripsi "Bola hijau dari tepung ketan berisi gula merah cair, dibalut kelapa parut. Kue tradisional yang meledak di mulut."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Tepung_Ketan ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Klepon"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Koba a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Bangka ;
+    nusa:deskripsi "Kue tradisional Bangka dari tepung beras dan gula aren yang dikukus dalam anyaman daun kelapa."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Tepung_Beras ;
+    nusa:metode_memasak "Dikukus"@id ;
+    nusa:nama "Koba"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Kohu_Kohu a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Ambon ;
+    nusa:deskripsi "Ikan cakalang asap atau rebus yang dicampur dengan kelapa parut, daun kemangi, dan cabai. Salad ikan khas Maluku."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Cakalang ;
+    nusa:metode_memasak "Tidak Dimasak / Direbus"@id ;
+    nusa:nama "Kohu-Kohu"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Konro a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Makassar ;
+    nusa:deskripsi "Iga sapi dalam kuah hitam pekat dari kluwek dan rempah. Ada versi berkuah (sup konro) dan dibakar (konro bakar)."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Iga_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Konro"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Kue_Bangkit a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Riau ;
+    nusa:deskripsi "Kue kering dari tepung sagu dan santan yang meleleh di mulut. Kue tradisional Melayu yang populer saat Lebaran."@id ;
+    nusa:kategori_diet "Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Tepung_Sagu ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Kue Bangkit"@id ;
+    nusa:terkait_budaya nusa:Culture_Melayu ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Kue_Lontar a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Papua ;
+    nusa:deskripsi "Kue pai berbentuk mangkok dari campuran tepung, telur, susu, dan vanili. Kue tradisional Papua yang manis dan lembut."@id ;
+    nusa:kategori_diet "Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Susu,
+        nusa:Ingredient_Telur,
+        nusa:Ingredient_Tepung ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Kue Lontar"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Kue_Padamaran a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Jambi ;
+    nusa:deskripsi "Kue hijau dari tepung beras dan santan yang dikukus dalam daun pisang. Bertekstur lembut dengan aroma pandan khas."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Santan,
+        nusa:Ingredient_Tepung_Beras ;
+    nusa:metode_memasak "Dikukus"@id ;
+    nusa:nama "Kue Padamaran"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Lapa_Lapa a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Kendari ;
+    nusa:deskripsi "Beras ketan yang dimasak dalam bungkus daun kelapa muda. Makanan tradisional Sulawesi Tenggara untuk upacara adat."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Beras_Ketan ;
+    nusa:metode_memasak "Dikukus"@id ;
+    nusa:nama "Lapa-Lapa"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Laporan___Ikan_Asar a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Ambon ;
+    nusa:deskripsi "Ikan cakalang yang diasap di atas bara kayu hingga kering kecoklatan. Disantap dengan papeda atau nasi dan sambal."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Cakalang ;
+    nusa:metode_memasak "Diasap"@id ;
+    nusa:nama "Laporan / Ikan Asar"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Lawar a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bali ;
+    nusa:deskripsi "Campuran sayuran cincang, kelapa parut, dan daging dengan bumbu bali khas. Ada lawar merah (dengan darah) dan lawar putih."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging,
+        nusa:Ingredient_Sayuran ;
+    nusa:metode_memasak "Tidak Dimasak / Direbus"@id ;
+    nusa:nama "Lawar"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Lema a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Rejang_Lebong ;
+    nusa:deskripsi "Makanan fermentasi dari rebung bambu muda dicampur ikan. Aroma fermentasi kuat, khas kuliner masyarakat Rejang Bengkulu."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan,
+        nusa:Ingredient_Rebung ;
+    nusa:metode_memasak "Difermentasi"@id ;
+    nusa:nama "Lema"@id ;
+    nusa:terkait_budaya nusa:Culture_Bengkulu ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Lempuk_Durian a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bengkalis ;
+    nusa:deskripsi "Dodol berbahan dasar durian asli tanpa campuran, bertekstur kenyal dan beraroma kuat. Oleh-oleh khas Riau."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Durian ;
+    nusa:metode_memasak "Dimasak / Dipanaskan"@id ;
+    nusa:nama "Lempuk Durian"@id ;
+    nusa:terkait_budaya nusa:Culture_Melayu ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Lontong_Balap a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Surabaya ;
+    nusa:deskripsi "Lontong dengan tahu goreng, tauge, lentho, bawang goreng, dan kuah kaldu petis. Sarapan jalanan khas Surabaya."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Lontong,
+        nusa:Ingredient_Tahu ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Lontong Balap"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Lumpia_Semarang a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Semarang ;
+    nusa:deskripsi "Lumpia berisi rebung, telur, dan udang yang digoreng renyah. Khas Semarang dengan saus kental manis dan acar bawang."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Rebung,
+        nusa:Ingredient_Udang ;
+    nusa:metode_memasak "Digoreng"@id ;
+    nusa:nama "Lumpia Semarang"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Mandai a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Banjarmasin ;
+    nusa:deskripsi "Kulit cempedak yang difermentasi lalu digoreng. Camilan unik khas Kalimantan Selatan dengan tekstur renyah dan rasa asam gurih."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Cempedak ;
+    nusa:metode_memasak "Difermentasi / Digoreng"@id ;
+    nusa:nama "Mandai"@id ;
+    nusa:terkait_budaya nusa:Culture_Banjar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Martabak_Bangka a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Bangka ;
+    nusa:deskripsi "Martabak tebal berisi telur dan bawang yang digoreng di wajan datar. Berbeda dengan martabak manis, ini versi gurih renyah."@id ;
+    nusa:kategori_diet "Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Telur,
+        nusa:Ingredient_Tepung ;
+    nusa:metode_memasak "Digoreng"@id ;
+    nusa:nama "Martabak Bangka"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Mi_Bangka a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bangka ;
+    nusa:deskripsi "Mie kuning dengan topping daging ikan atau udang dalam kuah kental gurih. Khas kuliner Bangka yang dipengaruhi Tionghoa."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan,
+        nusa:Ingredient_Udang ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Mi Bangka"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Mie_Celor a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palembang ;
+    nusa:deskripsi "Mie kuning dalam kuah santan udang yang kental dan gurih. Ditaburi telur rebus dan tauge, khas sarapan Palembang."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Udang ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Mie Celor"@id ;
+    nusa:terkait_budaya nusa:Culture_Palembang ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Mie_Kepiting a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Pontianak ;
+    nusa:deskripsi "Mie kuning dengan kepiting segar dalam kuah kaldu gurih. Kuliner Pontianak yang dipengaruhi tradisi Tionghoa Hakka."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Kepiting ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Mie Kepiting"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Nasi_Bakar a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Tarakan ;
+    nusa:deskripsi "Nasi dicampur bumbu dan ikan lalu dibungkus daun pisang dan dibakar. Aroma harum daun pisang meresap ke dalam nasi."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Beras,
+        nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Dibungkus dan Dibakar"@id ;
+    nusa:nama "Nasi Bakar"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Nasi_Campur_Bali a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bali ;
+    nusa:deskripsi "Nasi putih dengan berbagai lauk khas Bali: ayam betutu, sate lilit, lawar, jukut, dan sambal matah. Representasi lengkap kuliner Bali."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Beragam ;
+    nusa:metode_memasak "Beragam"@id ;
+    nusa:nama "Nasi Campur Bali"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Nasi_Goreng a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jakarta ;
+    nusa:deskripsi "Nasi yang ditumis dengan bumbu kecap, bawang, dan cabai. Ditambah telur, ayam, atau seafood. Ikon kuliner Indonesia."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Nasi ;
+    nusa:metode_memasak "Ditumis / Digoreng"@id ;
+    nusa:nama "Nasi Goreng"@id ;
+    nusa:terkait_budaya nusa:Culture_Betawi ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Nasi_Jaha a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Ternate ;
+    nusa:deskripsi "Beras ketan, santan, dan jahe yang dimasak dalam ruas bambu di atas bara api. Hidangan adat khas Maluku Utara yang aromatik."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Beras_Ketan ;
+    nusa:metode_memasak "Dimasak dalam bambu"@id ;
+    nusa:nama "Nasi Jaha"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Nasi_Kuning a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Samarinda ;
+    nusa:deskripsi "Nasi yang dimasak dengan santan dan kunyit hingga berwarna kuning. Disajikan dengan lauk pelengkap, populer di seluruh Kalimantan."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Beras,
+        nusa:Ingredient_Kunyit ;
+    nusa:metode_memasak "Dikukus"@id ;
+    nusa:nama "Nasi Kuning"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Nasi_Liwet a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Solo ;
+    nusa:deskripsi "Nasi yang dimasak dengan santan dan kaldu ayam. Disajikan dengan ayam opor, telur, sayur labu, dan sambal goreng hati."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Beras ;
+    nusa:metode_memasak "Dimasak dengan santan"@id ;
+    nusa:nama "Nasi Liwet"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Nasi_Pecel a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Madiun ;
+    nusa:deskripsi "Berbagai sayuran rebus dengan sambal kacang khas Madiun yang pedas manis. Disajikan di atas nasi dengan rempeyek dan emping."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sayuran ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Nasi Pecel"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Nasi_Pecel_Madiun a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Madiun ;
+    nusa:deskripsi "Sayuran rebus dengan sambal pecel berbumbu kacang, kencur, dan asam. Sambal Madiun dikenal lebih harum dari pecel daerah lain."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sayuran ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Nasi Pecel Madiun"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Nasi_Timbel a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bandung ;
+    nusa:deskripsi "Nasi panas yang dibungkus daun pisang sehingga harum. Disajikan dengan lauk ayam goreng, ikan asin, tahu, tempe, dan sambal."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Beras ;
+    nusa:metode_memasak "Dibungkus daun pisang"@id ;
+    nusa:nama "Nasi Timbel"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Onde_Onde a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Nationwide_asal_Jawa ;
+    nusa:deskripsi "Bola goreng dari tepung ketan berisi pasta kacang hijau, dibalut wijen. Dipengaruhi kuliner Tionghoa, populer di Jawa."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Kacang_Hijau,
+        nusa:Ingredient_Tepung_Ketan ;
+    nusa:metode_memasak "Digoreng"@id ;
+    nusa:nama "Onde-Onde"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Oseng_Oseng_Mercon a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Yogyakarta ;
+    nusa:deskripsi "Tumisan kikil dan daging sapi dengan cabai rawit dalam jumlah besar. Nama 'mercon' (petasan) menggambarkan rasa pedasnya."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Ditumis"@id ;
+    nusa:nama "Oseng-Oseng Mercon"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sangat Pedas"@id .
+
+nusa:Dish_Pais_Ikan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Banjarmasin ;
+    nusa:deskripsi "Ikan berbumbu yang dibungkus daun pisang lalu dipanggang. Bumbu khas Banjar dengan lengkuas, kunyit, dan cabai."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Dibungkus dan Dipanggang"@id ;
+    nusa:nama "Pais Ikan"@id ;
+    nusa:terkait_budaya nusa:Culture_Banjar ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Palubasa a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Makassar ;
+    nusa:deskripsi "Mirip coto namun kuahnya lebih encer dan segar. Sup jeroan sapi dengan kelapa gongseng yang memberikan rasa unik."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Jeroan_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Palubasa"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Palumara a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palu ;
+    nusa:deskripsi "Sup ikan dengan kuah asam segar dari asam jawa dan cabai. Hidangan tradisional Palu yang ringan namun sarat rempah."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Palumara"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Papeda a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jayapura ;
+    nusa:deskripsi "Bubur sagu kental dan kenyal yang lengket. Disantap bersama kuah kuning ikan tongkol atau kuah sayuran. Makanan pokok Papua."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sagu ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Papeda"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Pecel_Lele a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Lamongan ;
+    nusa:deskripsi "Ikan lele goreng renyah disajikan dengan sambal tomat pedas dan lalapan segar. Warung pecel lele ada di seluruh Indonesia."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Lele ;
+    nusa:metode_memasak "Digoreng"@id ;
+    nusa:nama "Pecel Lele"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Pelecing_Kangkung a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Lombok ;
+    nusa:deskripsi "Kangkung rebus dengan sambal tomat pedas yang segar dan mentah. Sambal dibuat dari cabai rawit, tomat, terasi, dan jeruk nipis."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Kangkung ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Pelecing Kangkung"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sangat Pedas"@id .
+
+nusa:Dish_Pempek a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palembang ;
+    nusa:deskripsi "Olahan ikan tenggiri yang dibentuk lalu direbus dan digoreng. Disajikan dengan kuah cuko manis pedas asam yang khas."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Tenggiri ;
+    nusa:metode_memasak "Digoreng / Direbus"@id ;
+    nusa:nama "Pempek"@id ;
+    nusa:terkait_budaya nusa:Culture_Palembang ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Pendap a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bengkulu ;
+    nusa:deskripsi "Ikan berbumbu rempah yang dibungkus daun talas lalu dikukus hingga matang. Rasa gurih pedas dengan aroma daun talas yang unik."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Dibungkus dan Dikukus"@id ;
+    nusa:nama "Pendap"@id ;
+    nusa:terkait_budaya nusa:Culture_Bengkulu ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Pengkang a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Pontianak ;
+    nusa:deskripsi "Beras ketan berisi ebi atau udang yang dibungkus daun nipah lalu dipanggang. Jajanan khas Pontianak berbentuk kerucut."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Beras_Ketan,
+        nusa:Ingredient_Udang ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Pengkang"@id ;
+    nusa:terkait_budaya nusa:Culture_Dayak ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Peuyeum a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bandung ;
+    nusa:deskripsi "Singkong yang difermentasi dengan ragi hingga manis dan sedikit beralkohol. Camilan tradisional Sunda yang unik."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Singkong ;
+    nusa:metode_memasak "Difermentasi"@id ;
+    nusa:nama "Peuyeum"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Pindang_Patin a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palembang___Lampung ;
+    nusa:deskripsi "Ikan patin dalam kuah asam segar dengan cabai dan rempah. Segar, gurih, dan sedikit pedas, populer di Sumatera bagian selatan."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Patin ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Pindang Patin"@id ;
+    nusa:terkait_budaya nusa:Culture_Lampung ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Pisang_Epe a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Makassar ;
+    nusa:deskripsi "Pisang kepok setengah matang yang dipres dan dibakar, disiram saus gula merah. Jajanan pantai Losari khas Makassar."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Pisang ;
+    nusa:metode_memasak "Dipanggang / Dipress"@id ;
+    nusa:nama "Pisang Epe"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Rawon a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Surabaya ;
+    nusa:deskripsi "Sup daging sapi berkuah hitam dari kluwek. Disajikan dengan nasi, tauge, telur asin, dan kerupuk udang. Ikon kuliner Jawa Timur."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Rawon"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Rendang a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Padang ;
+    nusa:deskripsi "Daging sapi dimasak perlahan dalam santan dan rempah-rempah hingga kering dan berwarna coklat gelap. Salah satu masakan terlezat di dunia versi CNN."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Dimasak lambat (slow-cook)"@id ;
+    nusa:nama "Rendang"@id ;
+    nusa:terkait_budaya nusa:Culture_Minang ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Rica_Rica a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Manado ;
+    nusa:deskripsi "Masakan dengan bumbu rica (cabai) yang sangat banyak. Ayam atau ikan ditumis dengan cabai, bawang, dan rempah Manado."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ayam,
+        nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Ditumis"@id ;
+    nusa:nama "Rica-Rica"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Sangat Pedas"@id .
+
+nusa:Dish_Rujak_Cingur a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Surabaya ;
+    nusa:deskripsi "Cingur (moncong sapi) rebus dicampur sayuran dan buah dengan bumbu petis hitam yang kuat. Kuliner khas Surabaya."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Cingur_Moncong_Sapi ;
+    nusa:metode_memasak "Tidak Dimasak"@id ;
+    nusa:nama "Rujak Cingur"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Rujak_Juhi a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jakarta ;
+    nusa:deskripsi "Cumi kering dipanggang dan disajikan dengan sayuran, ketupat, dan saus petis khas Betawi. Kuliner langka yang mulai jarang ditemui."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Cumi_Kering_Juhi ;
+    nusa:metode_memasak "Tidak Dimasak"@id ;
+    nusa:nama "Rujak Juhi"@id ;
+    nusa:terkait_budaya nusa:Culture_Betawi ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Sagu_Bakar a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Ambon ;
+    nusa:deskripsi "Adonan sagu yang dipanggang hingga kering dalam bentuk persegi. Makanan pokok Maluku yang keras dan tahan lama."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sagu ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Sagu Bakar"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Sagu_Lempeng a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jayapura ;
+    nusa:deskripsi "Sagu yang dibentuk menjadi lempengan keras dan dipanggang. Makanan tradisional tahan lama suku-suku di pedalaman Papua."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sagu ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Sagu Lempeng"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Saksang a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Tapanuli ;
+    nusa:deskripsi "Masakan adat Batak dari daging yang dimasak bersama darah dan rempah termasuk andaliman. Hidangan upacara tradisional."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Anjing,
+        nusa:Ingredient_Daging_Babi ;
+    nusa:metode_memasak "Dimasak dengan darah"@id ;
+    nusa:nama "Saksang"@id ;
+    nusa:terkait_budaya nusa:Culture_Batak ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Sambal_Dabu_Dabu a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Manado ;
+    nusa:deskripsi "Sambal mentah dari tomat, cabai, bawang merah, dan kemangi yang dipotong kasar. Segar, pedas, dan aromatik khas Manado."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Cabai,
+        nusa:Ingredient_Tomat ;
+    nusa:metode_memasak "Tidak Dimasak"@id ;
+    nusa:nama "Sambal Dabu-Dabu"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Sangat Pedas"@id .
+
+nusa:Dish_Sambal_Matah a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bali ;
+    nusa:deskripsi "Sambal mentah segar dari irisan bawang merah, cabai, serai, daun jeruk, dan minyak kelapa. Aromatik dan segar khas Bali."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Bawang,
+        nusa:Ingredient_Cabai ;
+    nusa:metode_memasak "Tidak Dimasak"@id ;
+    nusa:nama "Sambal Matah"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Sate_Buntel a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Solo ;
+    nusa:deskripsi "Daging kambing cincang yang dibungkus lemak lalu dibakar. Tekstur juicy dengan rasa smoky khas arang, spesialitas Solo."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Kambing ;
+    nusa:metode_memasak "Dibakar"@id ;
+    nusa:nama "Sate Buntel"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Sate_Klatak a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bantul ;
+    nusa:deskripsi "Sate kambing yang dibakar menggunakan jeruji besi (bukan tusuk bambu) sehingga matang merata. Bumbu sederhana garam dan merica."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Kambing ;
+    nusa:metode_memasak "Dibakar"@id ;
+    nusa:nama "Sate Klatak"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Sate_Lilit a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bali ;
+    nusa:deskripsi "Daging giling yang dililitkan pada batang serai atau bambu lalu dibakar. Bumbu bumbu Bali yang aromatik dan gurih."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ayam,
+        nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Dibakar"@id ;
+    nusa:nama "Sate Lilit"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Sate_Mak_Syik a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jambi ;
+    nusa:deskripsi "Sate daging sapi khas Jambi dengan bumbu kacang yang gurih dan sedikit manis. Disajikan dengan lontong dan acar."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Dibakar"@id ;
+    nusa:nama "Sate Mak Syik"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Sate_Maranggi a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Purwakarta ;
+    nusa:deskripsi "Sate dengan daging yang dimarinasi bumbu khas dan dibakar. Disajikan tanpa saus kacang, hanya dengan sambal oncom atau dabu-dabu."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi,
+        nusa:Ingredient_Kambing ;
+    nusa:metode_memasak "Dibakar"@id ;
+    nusa:nama "Sate Maranggi"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Sate_Rembiga a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Mataram ;
+    nusa:deskripsi "Sate daging sapi dengan bumbu manis pedas khas Lombok. Nama 'rembiga' dari kelurahan tempat sate ini berasal di Mataram."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Dibakar"@id ;
+    nusa:nama "Sate Rembiga"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Se%27i_Sapi a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Kupang ;
+    nusa:deskripsi "Daging sapi yang diasap perlahan menggunakan kayu kusambi hingga kering dan beraroma khas. Protein tradisional masyarakat NTT."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Diasap"@id ;
+    nusa:nama "Se'i Sapi"@id ;
+    nusa:terkait_budaya nusa:Culture_Indonesia ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Semanggi_Surabaya a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Surabaya ;
+    nusa:deskripsi "Daun semanggi rebus dengan tauge dan kerupuk puli, disiram bumbu petis encer manis. Jajanan unik yang mulai langka."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Daun_Semanggi ;
+    nusa:metode_memasak "Tidak Dimasak"@id ;
+    nusa:nama "Semanggi Surabaya"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Serabi_Notosuman a nusa:Snack ;
+    nusa:berasal_dari nusa:Region_Solo ;
+    nusa:deskripsi "Kue serabi tipis dengan tepung beras dan santan yang dimasak di wajan tanah liat kecil. Ada rasa original dan coklat."@id ;
+    nusa:kategori_diet "Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Tepung_Beras ;
+    nusa:metode_memasak "Dimasak di atas tungku"@id ;
+    nusa:nama "Serabi Notosuman"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Seruit a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Lampung ;
+    nusa:deskripsi "Ikan sungai dibakar atau direbus lalu disantap dengan sambal tempoyak atau terasi. Hidangan tradisional suku Lampung."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Sungai ;
+    nusa:metode_memasak "Dibakar / Direbus"@id ;
+    nusa:nama "Seruit"@id ;
+    nusa:terkait_budaya nusa:Culture_Lampung ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Sinonggi a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Kendari ;
+    nusa:deskripsi "Olahan sagu berbentuk seperti agar-agar yang disantap dengan kuah ikan atau sayuran. Makanan pokok suku Tolaki di Sultra."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Sagu ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Sinonggi"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Soto_Banjar a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Banjarmasin ;
+    nusa:deskripsi "Soto ayam khas Banjar dengan kuah bening berbumbu rempah halus. Disajikan dengan ketupat, perkedel, dan sate."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ayam ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Soto Banjar"@id ;
+    nusa:terkait_budaya nusa:Culture_Banjar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Soto_Betawi a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Jakarta ;
+    nusa:deskripsi "Soto berkuah santan atau susu dengan daging sapi, jeroan, dan tomat. Kaya rempah dengan taburan emping dan bawang goreng."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Soto Betawi"@id ;
+    nusa:terkait_budaya nusa:Culture_Betawi ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Soto_Lamongan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Lamongan ;
+    nusa:deskripsi "Soto ayam berkuah kuning bening dengan suwiran ayam, telur, dan koya (bubuk kerupuk udang). Gurih dan ringan khas Lamongan."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ayam ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Soto Lamongan"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Soto_Madura a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Madura ;
+    nusa:deskripsi "Soto berkuah kuning dengan potongan daging sapi dan jeroan. Khas dengan aroma rempah kuat dan sambal cabe rawit Madura."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Soto Madura"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Soto_Medan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Medan ;
+    nusa:deskripsi "Soto berkuah santan kuning dengan daging ayam atau sapi. Kaya rempah dengan tambahan perkedel dan sambal khas Medan."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ayam,
+        nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Soto Medan"@id ;
+    nusa:terkait_budaya nusa:Culture_Batak ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Soto_Padang a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Padang ;
+    nusa:deskripsi "Sup bening dengan daging sapi goreng renyah, soun, dan perkedel kentang. Kuah kaldu sapi yang gurih dengan rempah khas Minang."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Daging_Sapi ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Soto Padang"@id ;
+    nusa:terkait_budaya nusa:Culture_Minang ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Sup_Brenebon a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Manado ;
+    nusa:deskripsi "Sup kacang merah dengan potongan tulang babi yang kaya protein. Kuah gurih dengan rempah bawang dan daun bawang khas Manado."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Babi,
+        nusa:Ingredient_Kacang_Merah ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Sup Brenebon"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Tahu_Campur a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Lamongan ;
+    nusa:deskripsi "Lontong dengan tahu goreng, mie kuning, perkedel singkong, dan jeroan dalam kuah petis yang kaya rempah."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Jeroan,
+        nusa:Ingredient_Tahu ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Tahu Campur"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Tahu_Tek a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Surabaya ;
+    nusa:deskripsi "Tahu goreng yang dipotong dengan gunting, disajikan dengan lontong, tauge, dan bumbu petis kacang khas Surabaya."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Tahu ;
+    nusa:metode_memasak "Digoreng"@id ;
+    nusa:nama "Tahu Tek"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Tekwan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Palembang ;
+    nusa:deskripsi "Bola-bola ikan dalam sup bening dengan soun, jamur kuping, dan bengkuang. Versi sup dari pempek Palembang."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan_Tenggiri ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Tekwan"@id ;
+    nusa:terkait_budaya nusa:Culture_Palembang ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Tempoyak a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Bengkulu___Lampung ;
+    nusa:deskripsi "Durian yang difermentasi hingga asam, digunakan sebagai bumbu atau lauk. Rasa asam gurih yang unik dan khas Sumatera."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Durian ;
+    nusa:metode_memasak "Difermentasi"@id ;
+    nusa:nama "Tempoyak"@id ;
+    nusa:terkait_budaya nusa:Culture_Bengkulu ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+nusa:Dish_Tengkleng a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Solo ;
+    nusa:deskripsi "Sup tulang kambing dengan kuah bening yang gurih dan sedikit berminyak. Kaya kolagen, khas kuliner Solo yang hangat dan lezat."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Tulang_Kambing ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Tengkleng"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Sedang"@id .
+
+nusa:Dish_Timlo_Solo a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Solo ;
+    nusa:deskripsi "Sup bening dengan isian sosis Solo, telur pindang, ati ampela, dan sayuran. Rasa ringan dan hangat, sarapan favorit warga Solo."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ayam ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Timlo Solo"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Tinutuan a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Manado ;
+    nusa:deskripsi "Bubur Manado dari beras yang dimasak dengan berbagai sayuran seperti labu, kangkung, dan jagung. Sehat dan mengenyangkan."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Beras,
+        nusa:Ingredient_Sayuran ;
+    nusa:metode_memasak "Direbus"@id ;
+    nusa:nama "Tinutuan"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Tumpeng a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Nationwide_asal_Jawa ;
+    nusa:deskripsi "Nasi kuning berbentuk kerucut dikelilingi beragam lauk. Simbol syukur dalam upacara adat Jawa, kini populer di seluruh Indonesia."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Beragam_Lauk,
+        nusa:Ingredient_Beras ;
+    nusa:metode_memasak "Dikukus"@id ;
+    nusa:nama "Tumpeng"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Wingko_Babat a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Semarang ;
+    nusa:deskripsi "Kue bulat dari kelapa parut dan tepung ketan yang dipanggang. Oleh-oleh klasik dari Semarang yang manis dan legit."@id ;
+    nusa:kategori_diet "Vegan"@id ;
+    nusa:mengandung nusa:Ingredient_Kelapa,
+        nusa:Ingredient_Ketan ;
+    nusa:metode_memasak "Dipanggang"@id ;
+    nusa:nama "Wingko Babat"@id ;
+    nusa:terkait_budaya nusa:Culture_Jawa ;
+    nusa:tingkat_kepedasan "Tidak Pedas"@id .
+
+nusa:Dish_Woku a nusa:MainDish ;
+    nusa:berasal_dari nusa:Region_Manado ;
+    nusa:deskripsi "Ikan dimasak dengan bumbu woku khas Manado: daun kemangi, daun pandan, cabai, dan rempah segar yang aromatik."@id ;
+    nusa:kategori_diet "Non-Vegetarian"@id ;
+    nusa:mengandung nusa:Ingredient_Ikan ;
+    nusa:metode_memasak "Dimasak dengan bumbu"@id ;
+    nusa:nama "Woku"@id ;
+    nusa:terkait_budaya nusa:Culture_Makassar ;
+    nusa:tingkat_kepedasan "Pedas"@id .
+
+<http://nusarasa.id/ontology/data> a owl:Ontology ;
+    rdfs:label "NusaRasa Kuliner Dataset"@id ;
+    rdfs:comment "Generated: 2026-06-01T17:10:41.698750"@en,
+        "Instance data untuk ontologi NusaRasa"@id .
+
+nusa:Ingredient_Anjing a nusa:Ingredient ;
+    nusa:nama "Anjing"@id .
+
+nusa:Ingredient_Bawang a nusa:Ingredient ;
+    nusa:nama "Bawang"@id .
+
+nusa:Ingredient_Beragam a nusa:Ingredient ;
+    nusa:nama "Beragam"@id .
+
+nusa:Ingredient_Beragam_Lauk a nusa:Ingredient ;
+    nusa:nama "Beragam Lauk"@id .
+
+nusa:Ingredient_Bihun a nusa:Ingredient ;
+    nusa:nama "Bihun"@id .
+
+nusa:Ingredient_Buah a nusa:Ingredient ;
+    nusa:nama "Buah"@id .
+
+nusa:Ingredient_Cempedak a nusa:Ingredient ;
+    nusa:nama "Cempedak"@id .
+
+nusa:Ingredient_Cingur_Moncong_Sapi a nusa:Ingredient ;
+    nusa:nama "Cingur (Moncong Sapi)"@id .
+
+nusa:Ingredient_Cumi_Kering_Juhi a nusa:Ingredient ;
+    nusa:nama "Cumi Kering (Juhi)"@id .
+
+nusa:Ingredient_Daging a nusa:Ingredient ;
+    nusa:nama "Daging"@id .
+
+nusa:Ingredient_Daging_Babi a nusa:Ingredient ;
+    nusa:nama "Daging Babi"@id .
+
+nusa:Ingredient_Daun_Semanggi a nusa:Ingredient ;
+    nusa:nama "Daun Semanggi"@id .
+
+nusa:Ingredient_Daun_Singkong a nusa:Ingredient ;
+    nusa:nama "Daun Singkong"@id .
+
+nusa:Ingredient_Iga_Sapi a nusa:Ingredient ;
+    nusa:nama "Iga Sapi"@id .
+
+nusa:Ingredient_Ikan_Gabus a nusa:Ingredient ;
+    nusa:nama "Ikan Gabus"@id .
+
+nusa:Ingredient_Ikan_Kakap a nusa:Ingredient ;
+    nusa:nama "Ikan Kakap"@id .
+
+nusa:Ingredient_Ikan_Lele a nusa:Ingredient ;
+    nusa:nama "Ikan Lele"@id .
+
+nusa:Ingredient_Ikan_Mas a nusa:Ingredient ;
+    nusa:nama "Ikan Mas"@id .
+
+nusa:Ingredient_Ikan_Patin a nusa:Ingredient ;
+    nusa:nama "Ikan Patin"@id .
+
+nusa:Ingredient_Ikan_Sungai a nusa:Ingredient ;
+    nusa:nama "Ikan Sungai"@id .
+
+nusa:Ingredient_Ikan_Teri a nusa:Ingredient ;
+    nusa:nama "Ikan Teri"@id .
+
+nusa:Ingredient_Ikan_Tuna a nusa:Ingredient ;
+    nusa:nama "Ikan Tuna"@id .
+
+nusa:Ingredient_Jeroan a nusa:Ingredient ;
+    nusa:nama "Jeroan"@id .
+
+nusa:Ingredient_Kacang_Merah a nusa:Ingredient ;
+    nusa:nama "Kacang Merah"@id .
+
+nusa:Ingredient_Kaki_Sapi a nusa:Ingredient ;
+    nusa:nama "Kaki Sapi"@id .
+
+nusa:Ingredient_Kambing a nusa:Ingredient ;
+    nusa:nama "Kambing"@id .
+
+nusa:Ingredient_Kangkung a nusa:Ingredient ;
+    nusa:nama "Kangkung"@id .
+
+nusa:Ingredient_Keju a nusa:Ingredient ;
+    nusa:nama "Keju"@id .
+
+nusa:Ingredient_Kenari_Canarium a nusa:Ingredient ;
+    nusa:nama "Kenari (Canarium)"@id .
+
+nusa:Ingredient_Kepiting a nusa:Ingredient ;
+    nusa:nama "Kepiting"@id .
+
+nusa:Ingredient_Ketan a nusa:Ingredient ;
+    nusa:nama "Ketan"@id .
+
+nusa:Ingredient_Kunyit a nusa:Ingredient ;
+    nusa:nama "Kunyit"@id .
+
+nusa:Ingredient_Lontong a nusa:Ingredient ;
+    nusa:nama "Lontong"@id .
+
+nusa:Ingredient_Nanas a nusa:Ingredient ;
+    nusa:nama "Nanas"@id .
+
+nusa:Ingredient_Nangka_Muda a nusa:Ingredient ;
+    nusa:nama "Nangka Muda"@id .
+
+nusa:Ingredient_Nasi a nusa:Ingredient ;
+    nusa:nama "Nasi"@id .
+
+nusa:Ingredient_Santan a nusa:Ingredient ;
+    nusa:nama "Santan"@id .
+
+nusa:Ingredient_Sayuran_Mentah a nusa:Ingredient ;
+    nusa:nama "Sayuran Mentah"@id .
+
+nusa:Ingredient_Singkong a nusa:Ingredient ;
+    nusa:nama "Singkong"@id .
+
+nusa:Ingredient_Susu a nusa:Ingredient ;
+    nusa:nama "Susu"@id .
+
+nusa:Ingredient_Talas a nusa:Ingredient ;
+    nusa:nama "Talas"@id .
+
+nusa:Ingredient_Terong a nusa:Ingredient ;
+    nusa:nama "Terong"@id .
+
+nusa:Ingredient_Tomat a nusa:Ingredient ;
+    nusa:nama "Tomat"@id .
+
+nusa:Ingredient_Tulang_Kambing a nusa:Ingredient ;
+    nusa:nama "Tulang Kambing"@id .
+
+nusa:Region_Bantul a nusa:Region ;
+    nusa:nama "Bantul"@id ;
+    nusa:provinsi "DI Yogyakarta"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Bengkalis a nusa:Region ;
+    nusa:nama "Bengkalis"@id ;
+    nusa:provinsi "Riau"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Bengkulu a nusa:Region ;
+    nusa:nama "Bengkulu"@id ;
+    nusa:provinsi "Bengkulu"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Bengkulu___Lampung a nusa:Region ;
+    nusa:nama "Bengkulu / Lampung"@id ;
+    nusa:provinsi "Bengkulu"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Gianyar a nusa:Region ;
+    nusa:nama "Gianyar"@id ;
+    nusa:provinsi "Bali"@id ;
+    nusa:pulau "Bali dan Nusa Tenggara"@id .
+
+nusa:Region_Kandangan a nusa:Region ;
+    nusa:nama "Kandangan"@id ;
+    nusa:provinsi "Kalimantan Selatan"@id ;
+    nusa:pulau "Kalimantan"@id .
+
+nusa:Region_Maluku_Utara a nusa:Region ;
+    nusa:nama "Maluku Utara"@id ;
+    nusa:provinsi "Maluku Utara"@id ;
+    nusa:pulau "Maluku"@id .
+
+nusa:Region_Manokwari a nusa:Region ;
+    nusa:nama "Manokwari"@id ;
+    nusa:provinsi "Papua Barat"@id ;
+    nusa:pulau "Papua"@id .
+
+nusa:Region_Mataram a nusa:Region ;
+    nusa:nama "Mataram"@id ;
+    nusa:provinsi "Nusa Tenggara Barat"@id ;
+    nusa:pulau "Bali dan Nusa Tenggara"@id .
+
+nusa:Region_Nationwide_asal_Solo a nusa:Region ;
+    nusa:nama "Nationwide (asal Solo)"@id ;
+    nusa:provinsi "Jawa Tengah"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Palembang___Lampung a nusa:Region ;
+    nusa:nama "Palembang / Lampung"@id ;
+    nusa:provinsi "Lampung"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Palopo a nusa:Region ;
+    nusa:nama "Palopo"@id ;
+    nusa:provinsi "Sulawesi Selatan"@id ;
+    nusa:pulau "Sulawesi"@id .
+
+nusa:Region_Papua a nusa:Region ;
+    nusa:nama "Papua"@id ;
+    nusa:provinsi "Papua"@id ;
+    nusa:pulau "Papua"@id .
+
+nusa:Region_Purwakarta a nusa:Region ;
+    nusa:nama "Purwakarta"@id ;
+    nusa:provinsi "Jawa Barat"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Rejang_Lebong a nusa:Region ;
+    nusa:nama "Rejang Lebong"@id ;
+    nusa:provinsi "Bengkulu"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Samarinda a nusa:Region ;
+    nusa:nama "Samarinda"@id ;
+    nusa:provinsi "Kalimantan Timur"@id ;
+    nusa:pulau "Kalimantan"@id .
+
+nusa:Region_Sambas a nusa:Region ;
+    nusa:nama "Sambas"@id ;
+    nusa:provinsi "Kalimantan Barat"@id ;
+    nusa:pulau "Kalimantan"@id .
+
+nusa:Region_Sidoarjo a nusa:Region ;
+    nusa:nama "Sidoarjo"@id ;
+    nusa:provinsi "Jawa Timur"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Tarakan a nusa:Region ;
+    nusa:nama "Tarakan"@id ;
+    nusa:provinsi "Kalimantan Utara"@id ;
+    nusa:pulau "Kalimantan"@id .
+
+nusa:Ingredient_Babi a nusa:Ingredient ;
+    nusa:nama "Babi"@id .
+
+nusa:Ingredient_Bebek a nusa:Ingredient ;
+    nusa:nama "Bebek"@id .
+
+nusa:Ingredient_Cabai a nusa:Ingredient ;
+    nusa:nama "Cabai"@id .
+
+nusa:Ingredient_Daging_Kambing a nusa:Ingredient ;
+    nusa:nama "Daging Kambing"@id .
+
+nusa:Ingredient_Durian a nusa:Ingredient ;
+    nusa:nama "Durian"@id .
+
+nusa:Ingredient_Ikan_Tenggiri a nusa:Ingredient ;
+    nusa:nama "Ikan Tenggiri"@id .
+
+nusa:Ingredient_Jagung a nusa:Ingredient ;
+    nusa:nama "Jagung"@id .
+
+nusa:Ingredient_Jeroan_Sapi a nusa:Ingredient ;
+    nusa:nama "Jeroan Sapi"@id .
+
+nusa:Ingredient_Kacang_Hijau a nusa:Ingredient ;
+    nusa:nama "Kacang Hijau"@id .
+
+nusa:Ingredient_Kelapa a nusa:Ingredient ;
+    nusa:nama "Kelapa"@id .
+
+nusa:Ingredient_Pisang a nusa:Ingredient ;
+    nusa:nama "Pisang"@id .
+
+nusa:Ingredient_Tepung_Ketan a nusa:Ingredient ;
+    nusa:nama "Tepung Ketan"@id .
+
+nusa:Ingredient_Tepung_Sagu a nusa:Ingredient ;
+    nusa:nama "Tepung Sagu"@id .
+
+nusa:Region_Kendari a nusa:Region ;
+    nusa:nama "Kendari"@id ;
+    nusa:provinsi "Sulawesi Tenggara"@id ;
+    nusa:pulau "Sulawesi"@id .
+
+nusa:Region_Lampung a nusa:Region ;
+    nusa:nama "Lampung"@id ;
+    nusa:provinsi "Lampung"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Madiun a nusa:Region ;
+    nusa:nama "Madiun"@id ;
+    nusa:provinsi "Jawa Timur"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Madura a nusa:Region ;
+    nusa:nama "Madura"@id ;
+    nusa:provinsi "Jawa Timur"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Medan a nusa:Region ;
+    nusa:nama "Medan"@id ;
+    nusa:provinsi "Sumatera Utara"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Palangkaraya a nusa:Region ;
+    nusa:nama "Palangkaraya"@id ;
+    nusa:provinsi "Kalimantan Tengah"@id ;
+    nusa:pulau "Kalimantan"@id .
+
+nusa:Region_Palu a nusa:Region ;
+    nusa:nama "Palu"@id ;
+    nusa:provinsi "Sulawesi Tengah"@id ;
+    nusa:pulau "Sulawesi"@id .
+
+nusa:Region_Riau a nusa:Region ;
+    nusa:nama "Riau"@id ;
+    nusa:provinsi "Riau"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Semarang a nusa:Region ;
+    nusa:nama "Semarang"@id ;
+    nusa:provinsi "Jawa Tengah"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Tapanuli a nusa:Region ;
+    nusa:nama "Tapanuli"@id ;
+    nusa:provinsi "Sumatera Utara"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Ternate a nusa:Region ;
+    nusa:nama "Ternate"@id ;
+    nusa:provinsi "Maluku Utara"@id ;
+    nusa:pulau "Maluku"@id .
+
+nusa:Culture_Banjar a nusa:Culture ;
+    nusa:nama "Banjar"@id .
+
+nusa:Culture_Bengkulu a nusa:Culture ;
+    nusa:nama "Bengkulu"@id .
+
+nusa:Culture_Lampung a nusa:Culture ;
+    nusa:nama "Lampung"@id .
+
+nusa:Culture_Melayu a nusa:Culture ;
+    nusa:nama "Melayu"@id .
+
+nusa:Culture_Minang a nusa:Culture ;
+    nusa:nama "Minang"@id .
+
+nusa:Culture_Palembang a nusa:Culture ;
+    nusa:nama "Palembang"@id .
+
+nusa:Ingredient_Ikan_Cakalang a nusa:Ingredient ;
+    nusa:nama "Ikan Cakalang"@id .
+
+nusa:Ingredient_Rebung a nusa:Ingredient ;
+    nusa:nama "Rebung"@id .
+
+nusa:Ingredient_Telur a nusa:Ingredient ;
+    nusa:nama "Telur"@id .
+
+nusa:Ingredient_Tepung a nusa:Ingredient ;
+    nusa:nama "Tepung"@id .
+
+nusa:Region_Bandung a nusa:Region ;
+    nusa:nama "Bandung"@id ;
+    nusa:provinsi "Jawa Barat"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Banjarmasin a nusa:Region ;
+    nusa:nama "Banjarmasin"@id ;
+    nusa:provinsi "Kalimantan Selatan"@id ;
+    nusa:pulau "Kalimantan"@id .
+
+nusa:Region_Jambi a nusa:Region ;
+    nusa:nama "Jambi"@id ;
+    nusa:provinsi "Jambi"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Jayapura a nusa:Region ;
+    nusa:nama "Jayapura"@id ;
+    nusa:provinsi "Papua"@id ;
+    nusa:pulau "Papua"@id .
+
+nusa:Region_Kupang a nusa:Region ;
+    nusa:nama "Kupang"@id ;
+    nusa:provinsi "Nusa Tenggara Timur"@id ;
+    nusa:pulau "Bali dan Nusa Tenggara"@id .
+
+nusa:Region_Lamongan a nusa:Region ;
+    nusa:nama "Lamongan"@id ;
+    nusa:provinsi "Jawa Timur"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Lombok a nusa:Region ;
+    nusa:nama "Lombok"@id ;
+    nusa:provinsi "Nusa Tenggara Barat"@id ;
+    nusa:pulau "Bali dan Nusa Tenggara"@id .
+
+nusa:Region_Nationwide_asal_Jawa a nusa:Region ;
+    nusa:nama "Nationwide (asal Jawa)"@id ;
+    nusa:provinsi "Jawa Tengah"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Padang a nusa:Region ;
+    nusa:nama "Padang"@id ;
+    nusa:provinsi "Sumatera Barat"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Palembang a nusa:Region ;
+    nusa:nama "Palembang"@id ;
+    nusa:provinsi "Sumatera Selatan"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Pontianak a nusa:Region ;
+    nusa:nama "Pontianak"@id ;
+    nusa:provinsi "Kalimantan Barat"@id ;
+    nusa:pulau "Kalimantan"@id .
+
+nusa:Region_Yogyakarta a nusa:Region ;
+    nusa:nama "Yogyakarta"@id ;
+    nusa:provinsi "DI Yogyakarta"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Culture_Batak a nusa:Culture ;
+    nusa:nama "Batak"@id .
+
+nusa:Ingredient_Beras_Ketan a nusa:Ingredient ;
+    nusa:nama "Beras Ketan"@id .
+
+nusa:Ingredient_Tahu a nusa:Ingredient ;
+    nusa:nama "Tahu"@id .
+
+nusa:Ingredient_Tepung_Beras a nusa:Ingredient ;
+    nusa:nama "Tepung Beras"@id .
+
+nusa:Region_Bangka a nusa:Region ;
+    nusa:nama "Bangka"@id ;
+    nusa:provinsi "Kepulauan Bangka Belitung"@id ;
+    nusa:pulau "Sumatera"@id .
+
+nusa:Region_Makassar a nusa:Region ;
+    nusa:nama "Makassar"@id ;
+    nusa:provinsi "Sulawesi Selatan"@id ;
+    nusa:pulau "Sulawesi"@id .
+
+nusa:Region_Ambon a nusa:Region ;
+    nusa:nama "Ambon"@id ;
+    nusa:provinsi "Maluku"@id ;
+    nusa:pulau "Maluku"@id .
+
+nusa:Region_Solo a nusa:Region ;
+    nusa:nama "Solo"@id ;
+    nusa:provinsi "Jawa Tengah"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Surabaya a nusa:Region ;
+    nusa:nama "Surabaya"@id ;
+    nusa:provinsi "Jawa Timur"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Ingredient_Sagu a nusa:Ingredient ;
+    nusa:nama "Sagu"@id .
+
+nusa:Ingredient_Udang a nusa:Ingredient ;
+    nusa:nama "Udang"@id .
+
+nusa:Region_Bali a nusa:Region ;
+    nusa:nama "Bali"@id ;
+    nusa:provinsi "Bali"@id ;
+    nusa:pulau "Bali dan Nusa Tenggara"@id .
+
+nusa:Culture_Betawi a nusa:Culture ;
+    nusa:nama "Betawi"@id .
+
+nusa:Region_Jakarta a nusa:Region ;
+    nusa:nama "Jakarta"@id ;
+    nusa:provinsi "DKI Jakarta"@id ;
+    nusa:pulau "Jawa"@id .
+
+nusa:Region_Manado a nusa:Region ;
+    nusa:nama "Manado"@id ;
+    nusa:provinsi "Sulawesi Utara"@id ;
+    nusa:pulau "Sulawesi"@id .
+
+nusa:Ingredient_Ayam a nusa:Ingredient ;
+    nusa:nama "Ayam"@id .
+
+nusa:Ingredient_Beras a nusa:Ingredient ;
+    nusa:nama "Beras"@id .
+
+nusa:Culture_Dayak a nusa:Culture ;
+    nusa:nama "Dayak"@id .
+
+nusa:Ingredient_Sayuran a nusa:Ingredient ;
+    nusa:nama "Sayuran"@id .
+
+nusa:Ingredient_Daging_Sapi a nusa:Ingredient ;
+    nusa:nama "Daging Sapi"@id .
+
+nusa:Ingredient_Ikan a nusa:Ingredient ;
+    nusa:nama "Ikan"@id .
+
+nusa:Culture_Makassar a nusa:Culture ;
+    nusa:nama "Makassar"@id .
+
+nusa:Culture_Jawa a nusa:Culture ;
+    nusa:nama "Jawa"@id .
+
+nusa:Culture_Indonesia a nusa:Culture ;
+    nusa:nama "Indonesia"@id .
+

@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Flask SPARQL Server — loads RDF ontology + data, provides SPARQL endpoint
+  sparql-server:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.sparql
+    ports:
+      - "3030:3030"
+    volumes:
+      - ./backend/ontology:/app/ontology:ro
+      - ./backend/data:/app/data:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:3030/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Express.js Backend — REST API that queries the SPARQL server
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.express
+    ports:
+      - "5000:5000"
+    environment:
+      PORT: 5000
+      SPARQL_ENDPOINT: http://sparql-server:3030/sparql
+      SPARQL_STATS_ENDPOINT: http://sparql-server:3030/stats
+    depends_on:
+      sparql-server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Apache Jena Fuseki (optional — alternative to Flask SPARQL server)
+  # fuseki:
+  #   image: stain/jena-fuseki:latest
+  #   ports:
+  #     - "3031:3030"
+  #   environment:
+  #     FUSEKI_PASSWORD: "admin"
+  #     FUSEKI_MEMORY: "1024m"
+  #   volumes:
+  #     - fuseki-data:/fuseki
+  #   command: /fuseki-server --mem /nusarasa
+
+# volumes:
+#   fuseki-data:

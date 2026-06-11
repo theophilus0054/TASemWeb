@@ -1,0 +1,156 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix nusa: <http://nusarasa.id/ontology#> .
+
+# ─────────────────────────────────────────
+#  ONTOLOGI METADATA
+# ─────────────────────────────────────────
+<http://nusarasa.id/ontology>
+    a owl:Ontology ;
+    rdfs:label "NusaRasa Ontologi"@id ;
+    rdfs:comment "Ontologi sistem rekomendasi kuliner berbasis Semantic Web untuk masakan Nusantara."@id ;
+    owl:versionInfo "1.0" .
+
+
+# ─────────────────────────────────────────
+#  KELAS UTAMA (5 kelas)
+# ─────────────────────────────────────────
+
+nusa:Dish
+    a owl:Class ;
+    rdfs:label "Hidangan"@id ;
+    rdfs:comment "Suatu hidangan atau makanan/minuman khas Nusantara."@id .
+
+nusa:Region
+    a owl:Class ;
+    rdfs:label "Daerah"@id ;
+    rdfs:comment "Wilayah geografis asal suatu hidangan di Indonesia."@id .
+
+nusa:Ingredient
+    a owl:Class ;
+    rdfs:label "Bahan"@id ;
+    rdfs:comment "Bahan atau bumbu yang digunakan dalam suatu hidangan."@id .
+
+nusa:Culture
+    a owl:Class ;
+    rdfs:label "Budaya"@id ;
+    rdfs:comment "Konteks budaya atau suku yang berkaitan dengan hidangan."@id .
+
+nusa:Event
+    a owl:Class ;
+    rdfs:label "Acara"@id ;
+    rdfs:comment "Acara atau peristiwa di mana suatu hidangan biasa disajikan."@id .
+
+
+# ─────────────────────────────────────────
+#  SUBKELAS DISH
+# ─────────────────────────────────────────
+
+nusa:MainDish
+    a owl:Class ;
+    rdfs:subClassOf nusa:Dish ;
+    rdfs:label "Makanan Utama"@id ;
+    rdfs:comment "Hidangan yang disajikan sebagai menu utama dalam sebuah sajian makan."@id .
+
+nusa:Snack
+    a owl:Class ;
+    rdfs:subClassOf nusa:Dish ;
+    rdfs:label "Camilan"@id ;
+    rdfs:comment "Hidangan ringan yang biasa dikonsumsi di luar waktu makan utama."@id .
+
+nusa:Beverage
+    a owl:Class ;
+    rdfs:subClassOf nusa:Dish ;
+    rdfs:label "Minuman"@id ;
+    rdfs:comment "Minuman khas Nusantara, baik panas maupun dingin."@id .
+
+
+# ─────────────────────────────────────────
+#  OBJECT PROPERTIES
+# ─────────────────────────────────────────
+
+nusa:berasal_dari
+    a owl:ObjectProperty ;
+    rdfs:label "berasal dari"@id ;
+    rdfs:comment "Menghubungkan hidangan ke daerah asal pembuatannya."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  nusa:Region .
+
+nusa:mengandung
+    a owl:ObjectProperty ;
+    rdfs:label "mengandung"@id ;
+    rdfs:comment "Menghubungkan hidangan ke bahan-bahan utama yang digunakan."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  nusa:Ingredient .
+
+nusa:terkait_budaya
+    a owl:ObjectProperty ;
+    rdfs:label "terkait budaya"@id ;
+    rdfs:comment "Menghubungkan hidangan ke konteks budaya yang melatarbelakanginya."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  nusa:Culture .
+
+nusa:disajikan_pada
+    a owl:ObjectProperty ;
+    rdfs:label "disajikan pada"@id ;
+    rdfs:comment "Menghubungkan hidangan ke acara atau peristiwa di mana hidangan tersebut biasa disajikan."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  nusa:Event .
+
+nusa:memiliki_varian
+    a owl:ObjectProperty ;
+    rdfs:label "memiliki varian"@id ;
+    rdfs:comment "Menghubungkan hidangan ke varian atau versi lainnya dari hidangan yang sama."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  nusa:Dish .
+
+nusa:berkaitan_dengan
+    a owl:ObjectProperty ;
+    rdfs:label "berkaitan dengan"@id ;
+    rdfs:comment "Menghubungkan dua hidangan yang memiliki kemiripan bahan, teknik, atau budaya."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  nusa:Dish .
+
+
+# ─────────────────────────────────────────
+#  DATA PROPERTIES
+# ─────────────────────────────────────────
+
+nusa:nama
+    a owl:DatatypeProperty ;
+    rdfs:label "nama"@id ;
+    rdfs:comment "Nama resmi dari entitas (hidangan, daerah, bahan, dsb)."@id ;
+    rdfs:domain owl:Thing ;
+    rdfs:range  xsd:string .
+
+nusa:deskripsi
+    a owl:DatatypeProperty ;
+    rdfs:label "deskripsi"@id ;
+    rdfs:comment "Deskripsi singkat mengenai hidangan atau entitas lainnya."@id ;
+    rdfs:domain owl:Thing ;
+    rdfs:range  xsd:string .
+
+nusa:metode_memasak
+    a owl:DatatypeProperty ;
+    rdfs:label "metode memasak"@id ;
+    rdfs:comment "Teknik atau cara memasak yang digunakan (misal: digoreng, dikukus, dibakar)."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  xsd:string .
+
+nusa:tingkat_kepedasan
+    a owl:DatatypeProperty ;
+    rdfs:label "tingkat kepedasan"@id ;
+    rdfs:comment "Tingkat kepedasan hidangan: tidak pedas, rendah, sedang, tinggi, sangat tinggi."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  xsd:string .
+
+nusa:kategori_diet
+    a owl:DatatypeProperty ;
+    rdfs:label "kategori diet"@id ;
+    rdfs:comment "Kategori diet yang sesuai (misal: halal, vegetarian, vegan, bebas gluten)."@id ;
+    rdfs:domain nusa:Dish ;
+    rdfs:range  xsd:string .
+
+
