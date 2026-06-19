@@ -37,8 +37,8 @@ export default function BrowsePage() {
     setError(null);
     try {
       const res = await fetch('/api/data?page=1&limit=200');
-      if (!res.ok) throw new Error('Gagal memuat data');
       const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Gagal memuat data');
       setFoods(data.items || []);
     } catch (err) {
       setError(err.message);
