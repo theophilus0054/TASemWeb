@@ -12,6 +12,7 @@ Run:
 Access: http://localhost:3030/sparql
 """
 
+import os
 import json
 import logging
 from pathlib import Path
@@ -345,8 +346,9 @@ if __name__ == '__main__':
     load_data()
     
     # Start server
-    logger.info("Server starting on http://localhost:3030")
-    logger.info("Query editor: http://localhost:3030/query")
+    port = int(os.environ.get('PORT', 3030))
+    logger.info(f"Server starting on http://localhost:{port}")
+    logger.info(f"Query editor: http://localhost:{port}/query")
     logger.info("=" * 60)
     
-    app.run(host='0.0.0.0', port=3030, debug=True)
+    app.run(host='0.0.0.0', port=port, debug=False)
